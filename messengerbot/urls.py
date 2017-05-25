@@ -25,5 +25,5 @@ from django.conf.urls import url
 from .views import index
 
 urlpatterns = [
-    url(r'^messenger_web_hook/?$', index)
+    url(r'^messenger-web-hook/?$', index)
 ]

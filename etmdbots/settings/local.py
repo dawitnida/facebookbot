@@ -19,7 +19,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-from .base_setting import *
+from etmdbots.settings.base_settings import *
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
