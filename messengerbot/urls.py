@@ -6,8 +6,7 @@ __author__ = "EtMDB Developers (developers@etmdb.com)"
 __date__ = "Date: 25/05/2017"
 __version__ = "Version: 1.0"
 __Copyright__ = "Copyright: @etmdb"
-
-""" etmdbots URL Configuration
+"""messengerbot app URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -23,9 +22,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from django.contrib import admin
+from .views import index
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^bot/', include('messengerbot.urls')),
+    url(r'^messenger_web_hook/?$', index)
 ]
